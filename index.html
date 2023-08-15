@@ -4,10 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css" type="text/css" />
-  <script src="scripts.js"></script>
-  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+  <script src="scripts.js" defer></script>
+  <title>Blackfyre Fan Club</title>
 </head>
 <body>
-  
+  <div class="left-side">
+    <div class="banner">
+      <img src="./img/houseBlackfyre.jpeg"/>
+      <p>The Blackfyre Fanclub</p>
+    </div>
+    <p id="credit">Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marek Piwnicki</a> on <a href="https://unsplash.com/photos/JnXebVlsVrg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> &bull; Sigil Source: siriuscrane.deviantart.com
+    </p>
+  </div>
+  <div class="right-side">
+    <h1>This is not a real online fan club! If it was real though, you would definitely want to sign up because it would certainly be full of amazing people! "Sign up" <em>now</em> to get started! <br /><br /> You <em>know</em> you want to!
+    </h1>
+    <form action= "" method="POST">
+      <div class="input-section">
+        <h2>Let's do this!</h2>
+        <fieldset>
+          <div class="input">
+            <label for="first-name">FIRST NAME</label>
+            <input required type="text" id="first-name" name="first-name" placeholder="Enter First Name" />
+          </div>
+          <div class="input">
+            <label for="last-name">LAST NAME</label>
+            <input required type="text" id="last-name" name="last-name" placeholder="Enter Last Name" />
+          </div>
+          <div class="input">
+            <label for="email">EMAIL</label>
+            <input required type="email" id="email" name="email" placeholder="Enter Email eg. daemon@gmail.com"/>
+          </div>
+          <div class="input">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input required type="tel" id="phone-number" name="phone-number" placeholder="Enter Phone Number"/>
+          </div>
+          <div class="input">
+            <label for="password">PASSWORD</label>
+            <input required type="password" id="password" name="password" placeholder="Choose Password" />
+            <div id="message"></div>
+          </div>
+          <div class="input">
+            <label for="confirmPassword">CONFIRM PASSWORD</label>
+            <input required type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" onkeyup="check()"/>
+          </div>
+        </fieldset>
+      </div>
+      <div class="button-section">
+        <button type="submit" id="create-account">Create Account</button>
+        <p>Already have an account? <a href="https://awoiaf.westeros.org/index.php/House_Blackfyre">Log In</a></p>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
